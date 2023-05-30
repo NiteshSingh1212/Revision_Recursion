@@ -1,0 +1,184 @@
+#include<iostream>
+#include<limits.h>
+#include<vector>
+#include<string>
+using namespace std;
+// int stairs(int n){
+//     if(n==1||n==0){
+//         return 1;
+//     }
+//     int ans= stairs(n-1)+stairs(n-2);
+//     return ans;
+// }
+// void maxNo(int arr[],int n,int i,int &maxi){
+   
+//     if(i>=n){
+//         return ;
+//     }
+//     if(arr[i]>maxi){
+//         maxi=arr[i];
+//     }
+//     maxNo(arr,n,i+1,maxi);
+    
+// }
+// int  miniNo(int arr[],int n,int i,int &mini){
+   
+//     if(i>=n){
+//         return -1;
+//     }
+//     mini=min(arr[i],mini);
+//    return miniNo(arr,n,i+1,mini);
+// }
+// bool stringKey(string &str,int &i,char &key,int &n){
+//     for(int i=0;i<n;i++){
+//          if(str[i]==key){
+//             return true;
+//          }
+//     }return false;
+// }
+// bool stringKey(string &str,int i,char &key,int &n){
+//     if(i>=n){
+//         return false;
+//     }
+//          if(str[i]==key){
+//             return true;
+//          }
+//          return stringKey(str,i+1,key,n);  
+// }
+// void printDigit(int n){
+//     if(n==0){
+//         return;
+//     }
+//   int  digit=n/10;
+//     printDigit(digit);
+//     cout<<n%10;
+// bool binarySearch(int arr[],int i,int key,int n){
+//  if(i>=n){
+//     return false;
+//  }
+//  if(arr[i]==key){
+//     return true;
+//  }
+//  binarySearch(arr,i+1,key,n);
+// }
+// bool checkArrayAccending(int arr[],int i,int n){
+// if(i==n-1){
+//     return true;
+// }
+// if(arr[i]>arr[i+1]){
+//     return false;
+// }
+// return checkArrayAccending(arr,i+1,n);
+// }
+// void subASeqStr(string str,string output,int i){
+// if(i==str.length()){
+//     cout<<output<<" ";
+//     return;
+// }
+// subASeqStr(str,output,i+1);
+// output.push_back(str[i]);
+// subASeqStr(str,output,i+1);
+// }
+// int targetSum(int arr[],int n,int target){
+//     if(target==0){
+//         return 0;
+//     }
+//     if(target<0){
+//         return INT_MAX;
+//     }
+//     int mini=INT_MAX;
+    
+//     for(int i=0;i<n;i++){
+//         int ans=targetSum(arr,n,target-arr[i]);
+//         if(ans!=INT_MAX){
+//        mini=min(mini,ans+1);
+//         }
+//     }
+//     return mini;
+// }
+// int cutSegments(int n,int x,int y,int z){
+//     if(n==0){
+//         return 0;
+//     }
+//     if(n<0){
+//         return INT_MIN;
+//     }
+//     int maxi=INT_MIN;
+//     int a=cutSegments(n-x,x,y,z)+1;
+//     int b=cutSegments(n-y,x,y,z)+1;
+//     int c=cutSegments(n-z,x,y,z)+1;
+//     maxi=max(a,max(b,c));
+//     return maxi;
+// }
+// void  maxiSumNonAdjEle(int arr[],int n,int i,int sum,int& maxi){
+   
+//     if(i>n-1){
+//         maxi=max(sum,maxi);
+//         return ;
+//     }
+//    maxiSumNonAdjEle(arr,n,i+2,sum+arr[i],maxi);
+//    maxiSumNonAdjEle(arr,n,i+1,sum,maxi);
+// void reverseString(string &s,int i,int j){
+//   if(i>=j){
+//     return ;
+//   }
+//   swap(s[i],s[j]);
+//   reverseString(s,i+1,j-1);
+// }  
+
+// }
+// bool checkPalindrome(string s,int i,int j){
+//     if(i>j){
+//         return false;
+//     }
+//     if(s[i]==s[j]){
+//      return true;
+//     }
+//      checkPalindrome(s,i+1,j-1);
+// }
+
+int main(){
+    // int arr[100]={10,20,30,40,100};
+    // int n=5;
+    // int i=0;
+//     string str="abc";
+//     string output="";
+// int i=0,n=3;
+    // int key=300;
+    //  int maxi=INT_MIN;
+    //  int mini=INT_MAX;
+    // int n;
+    // cout<<"Enter the value of n: "<<" ";
+    // cin>>n;
+//    cout<< stairs(n);
+// maxNo(arr,n,i,maxi);
+// cout<<maxi;
+// miniNo(arr,n,i,mini);
+// cout<<mini;
+// string str="Nitesh";
+// int i=0,n=6;
+// char key='t';
+// cout<<stringKey(str,i,key,n);
+// int n=680;
+// printDigit(n);
+       // cout<<checkArrayAccending(arr,i,n);
+// binarySearch(arr,i,key,n);
+// subASeqStr(str,output,i);
+// int arr[]={2,3};
+// int target=5;
+// int n=7;
+// int mini=INT_MAX;
+// cout<<targetSum(arr,n,target);
+// int x=5,y=2,z=2,n=7;
+// int maxi=INT_MIN;
+// cout<<cutSegments(n,x,y,z);
+// int arr[]={2,1,4,9};
+// int n=4,i=0,sum=0;
+//   int maxi=INT_MIN;
+// maxiSumNonAdjEle(arr,n,i,sum,maxi);
+// cout<<maxi;
+// string s="Nitesh";
+// int j=s.size()-1;
+// int i=0;
+// reverseString(s,i,j); 
+}
